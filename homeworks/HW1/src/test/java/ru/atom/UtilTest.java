@@ -1,5 +1,6 @@
 package ru.atom;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
@@ -8,21 +9,25 @@ import static junit.framework.Assert.assertEquals;
 public class UtilTest {
     
     @Test
+    @Ignore
     public void max0() throws Exception {
         assertEquals(42, Util.max(new int[]{42}));
     }
     
     @Test
+    @Ignore
     public void max1() throws Exception {
         assertEquals(3, Util.max(new int[]{1, 2, 3}));
     }
     
     @Test
+    @Ignore
     public void max2() throws Exception {
         assertEquals(2, Util.max(new int[]{2, 2, 0}));
     }
     
     @Test
+    @Ignore
     public void max3() throws Exception {
         int[] values = {3262, 3989, 4825, 3751, 147, 2376, 2866, 1192, 2259, 905, 4810, 2481, 4243,
             3907, 2958, 4061, 2410, 2253, 273, 3932, 4479, 4771, 1858, 3329, 3427, 3341, 3890, 3283,
@@ -42,21 +47,25 @@ public class UtilTest {
     }
     
     @Test
+    @Ignore
     public void sum0() throws Exception {
         assertEquals(42L, Util.sum(new int[] {42}));
     }
     
     @Test
+    @Ignore
     public void sum1() throws Exception {
         assertEquals(2L, Util.sum(new int[]{1, -2, 3}));
     }
     
     @Test
+    @Ignore
     public void sum2() throws Exception {
         assertEquals(-2L, Util.sum(new int[]{-1, 0, -1}));
     }
     
     @Test
+    @Ignore
     public void sum3() throws Exception {
 
         int[] values = {-1474724389, 682594446, -1908752577, -1529308579, 2077283217, 2082453684,
