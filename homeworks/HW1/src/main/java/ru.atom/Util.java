@@ -17,7 +17,7 @@ public class Util {
      */
     public static int max(int[] values) {
         //throw new UnsupportedOperationException();
-		return 0;
+        return 0;
     }
 
     /**
@@ -28,7 +28,7 @@ public class Util {
      */
     public static long sum(int[] values) {
         //throw new UnsupportedOperationException();
-		return 0;
+        return 0;
     }
 
 
