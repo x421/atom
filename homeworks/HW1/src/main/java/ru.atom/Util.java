@@ -7,7 +7,13 @@ package ru.atom;
  */
 public class Util {
 
+    public static void main(String[] args) {
+        System.out.println(getHelloWorld());
+    }
 
+    public static String getHelloWorld() {
+        return "Hello, World!";
+    }
 
     /**
      * Returns the greatest of {@code int} values.
