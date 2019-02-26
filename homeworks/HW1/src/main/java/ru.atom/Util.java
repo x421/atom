@@ -17,7 +17,7 @@ public class Util {
      */
     public static int max(int[] values) {
         //throw new UnsupportedOperationException();
-        return 0;
+        return 1;
     }
 
     /**
