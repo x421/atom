@@ -6,4 +6,4 @@ jdk:
 env:
   - $PROJECT_DIR=lecture02
 
-script: cd $PROJECT_DIR && ./gradlew assemble && ./gradlew check
+script: cd $PROJECT_DIR && chmod +x ./gradlew && ./gradlew assemble && ./gradlew check
