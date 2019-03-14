@@ -28,6 +28,7 @@ public class ChatClientTest {
     }
 
     @Test
+    @Ignore
     public void viewChat() throws IOException {
         Response response = ChatClient.viewChat();
         System.out.println("[" + response + "]");
@@ -37,6 +38,7 @@ public class ChatClientTest {
 
 
     @Test
+    @Ignore
     public void viewOnline() throws IOException {
         Response response = ChatClient.viewOnline();
         System.out.println("[" + response + "]");
@@ -45,6 +47,7 @@ public class ChatClientTest {
     }
 
     @Test
+    @Ignore
     public void say() throws IOException {
         Response response = ChatClient.say(MY_NAME_IN_CHAT, MY_MESSAGE_TO_CHAT);
         System.out.println("[" + response + "]");
