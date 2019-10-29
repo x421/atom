@@ -8,14 +8,10 @@
  
 allprojects {
   apply plugin: 'checkstyle'
+  apply plugin: 'java-library'
   checkstyle {
     configFile = rootProject.file('config/checkstyle/checkstyle.xml')
   }
-}
-
-plugins {
-    // Apply the java-library plugin to add support for Java Library
-    id 'java-library'
 }
 
 repositories {
