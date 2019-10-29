@@ -49,20 +49,20 @@ public class Game {
 		String userWord = "";
 		System.out.println(word);
 		do {
-			System.out.println("Введите слово из "+word.length()+" букв:");
+			System.out.println("Р’РІРµРґРёС‚Рµ СЃР»РѕРІРѕ РёР· "+word.length()+" Р±СѓРєРІ:");
 			userWord = in.next();
-			System.out.print("Быков: ");
+			System.out.print("Р‘С‹РєРѕРІ: ");
 			System.out.println(bull(word, userWord));
-			System.out.print("Коров: ");
+			System.out.print("РљРѕСЂРѕРІ: ");
 			System.out.println(cow(word, userWord));
 			
 			
 		}while(word != userWord && i < max);
 		
 		if(word == userWord)
-			System.out.println("Слово угадано!");
+			System.out.println("РЎР»РѕРІРѕ СѓРіР°РґР°РЅРѕ!");
 		else
-			System.out.println("Слово не угадано!");
+			System.out.println("РЎР»РѕРІРѕ РЅРµ СѓРіР°РґР°РЅРѕ!");
 		
 		in.close();
 	}
