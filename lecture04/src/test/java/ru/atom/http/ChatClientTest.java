@@ -1,6 +1,8 @@
 package ru.atom.http;
 
 import okhttp3.Response;
+import ru.atom.chat.client.ChatClient;
+
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
