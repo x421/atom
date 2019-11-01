@@ -1,4 +1,6 @@
 package ru.example;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import java.io.BufferedReader;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -14,7 +16,8 @@ import java.util.logging.SimpleFormatter;
 public class BullsAndCows {
 
     private static String timeStamp = new SimpleDateFormat("yyyyMMdd").format(Calendar.getInstance().getTime());
-    private static final Logger LOGGER = Logger.getLogger(BullsAndCows.class.getName());
+    //private static final Logger LOGGER = Logger.getLogger(BullsAndCows.class.getName());
+	private final Logger Logger = (Logger) LogManager.getLogger();
     private static FileHandler fh;
 
     public static void main(String[] args) {
