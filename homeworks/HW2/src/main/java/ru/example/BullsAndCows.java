@@ -16,7 +16,7 @@ public class BullsAndCows {
 
     private static String timeStamp = new SimpleDateFormat("yyyyMMdd").format(Calendar.getInstance().getTime());
     //private static final Logger LOGGER = Logger.getLogger(BullsAndCows.class.getName());
-	private final Logger Logger = (Logger) LogManager.getLogger();
+	private final Logger LOGGER = (Logger) LogManager.getLogger();
     private static FileHandler fh;
 
     public static void main(String[] args) {
