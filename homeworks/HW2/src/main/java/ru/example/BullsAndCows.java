@@ -15,7 +15,6 @@ import java.util.logging.SimpleFormatter;
 public class BullsAndCows {
 
     private static String timeStamp = new SimpleDateFormat("yyyyMMdd").format(Calendar.getInstance().getTime());
-    //private static final Logger LOGGER = Logger.getLogger(BullsAndCows.class.getName());
 	private static final Logger LOGGER = (Logger) LogManager.getLogger();
     private static FileHandler fh;
 
@@ -24,8 +23,6 @@ public class BullsAndCows {
         try {
             boolean flag = true;
 
-            fh = new FileHandler("logfile_" + timeStamp + ".log");
-            LOGGER.addHandler(fh);
             SimpleFormatter formatter = new SimpleFormatter();
             fh.setFormatter(formatter);
 
