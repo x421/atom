@@ -16,29 +16,18 @@ public class BullsAndCows {
 
     private static String timeStamp = new SimpleDateFormat("yyyyMMdd").format(Calendar.getInstance().getTime());
 	private static final Logger LOGGER = (Logger) LogManager.getLogger();
-    private static FileHandler fh;
 
     public static void main(String[] args) {
 
-        try {
-            boolean flag = true;
+        boolean flag = true;
 
-            SimpleFormatter formatter = new SimpleFormatter();
-            fh.setFormatter(formatter);
+        System.out.println("Welcome to Bulls and Cows game!");
+        LOGGER.info( "Logger started!" );
 
-            System.out.println("Welcome to Bulls and Cows game!");
-            LOGGER.info( "Logger started!" );
-
-            do{
-                flag = playGame();
-            }
-            while (flag);
-
-        } catch (SecurityException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        do{
+             flag = playGame();
         }
+        while (flag);
 
     }
 
